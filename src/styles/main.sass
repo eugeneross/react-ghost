@@ -1,0 +1,125 @@
+// test
+*
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+  &:before, &:after
+    -moz-box-sizing: border-box
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+
+html
+  overflow-y: scroll
+
+body
+  padding: 1.5rem
+  font-weight: 400
+  color: gray(37%)
+  text-rendering: optimizeLegibility
+  word-wrap: break
+
+header a.active
+  color: gray(60%)
+  text-decoration: none
+  cursor: default
+
+p, li
+  word-wrap: break-word
+
+a
+  text-decoration: none
+  color: #4183c4
+  &:hover, &:focus
+    text-decoration: underline
+    color: inherit
+
+img
+  margin-bottom: 1rem
+  max-width: 100%
+  &.float-left
+    float: left
+    margin-right: .25rem
+
+code
+  background: gray(95%)
+  border: 1px solid gray(80%)
+  display: inline
+  font-family: Inconsolata, monospace, serif
+  font-size: 16px
+  line-height: 20px
+  max-width: 100%
+  overflow: auto
+  padding: 0 .125rem
+
+pre
+  margin: 0
+  margin-bottom: 1rem
+  padding: 0
+  code
+    border: none
+    display: inline-block
+    overflow: initial
+    padding: 1rem
+    white-space: inherit
+    width: 100%
+    word-wrap: inherit
+
+blockquote
+  border-color: gray(80%)
+  margin: 0
+  margin-left: .5rem
+
+ul, ol
+  padding: 0 0 0 1.5rem
+  margin: 1rem 0
+
+ul
+  ol, ul
+    margin: 0
+
+ol
+  ol, ul
+    margin: 0
+
+ul li, ol li
+  margin-bottom: .5rem
+
+hr
+  background: gray(80%)
+  border: none
+  clear: both
+  float: none
+  height: 1px
+  width: 100%
+
+label
+  display: inline-block
+  margin-bottom: .8rem
+
+input, textarea
+  border-color: gray(80%)
+  margin-bottom: 1rem
+  resize: none
+  width: 100%
+
+table
+  width: 100%
+  th, td
+    padding: .4rem
+    border-color: gray(90%)
+  thead
+    color: gray(15%)
+    th
+      border-color: gray(75%)
+      text-align: left
+  tbody tr:last-child
+    th, td
+      border-bottom-width: 0px
+  tfoot tr:last-child
+    th, td
+      border-bottom-width: 0px
+
+h1, h2, h3, h4, h5
+  color: gray(15%)
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-weight: 700
